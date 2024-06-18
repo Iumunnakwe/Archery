@@ -1,0 +1,50 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    background-image: url('ok.jpeg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#scoreboard {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.homepage {
+    text-align: center;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}

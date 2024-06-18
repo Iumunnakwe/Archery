@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bow and Arrow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="homepage">
+    <h1>Welcome to Ihechineme Arrow Space</h1>
+    <p>Pick your difficulty level:</p>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+    <button onclick="startGame('insanity')">Insanity</button>
+  </div>
+<div class="container" style="display: none;">
+  <canvas id="canvas"></canvas>
+  <div id="scoreboard">
+    <p>Lives: <span id="lives">4</span></p>
+    <p>Hits: <span id="hits">0</span></p>
+    <p>Misses: <span id="misses">0</span></p>
+    <form>
+        <button type="submit">Restart</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+  <script>
+    function startGame(level) {
+      document.querySelector('.homepage').style.display = 'none';
+      document.querySelector('.container').style.display = 'block';
+      // Initialize the game
+      initGame(level);
+    }
+  </script>
+</body>
+</html>
