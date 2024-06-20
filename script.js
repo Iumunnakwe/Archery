@@ -148,7 +148,10 @@ function endGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     let imageSrc = '';
-    if (hits >= 8) {
+    if (hits >= 20) {
+        imageSrc = 'diamond.png'; // Replace with your gold medal image path
+      } 
+   else if (hits >= 8) {
       imageSrc = 'gold.png'; // Replace with your gold medal image path
     } else if (hits >= 5) {
       imageSrc = 'silver.png'; // Replace with your silver medal image path
@@ -207,7 +210,7 @@ function initGame(level) {
   switch(level) {
     case 'easy':
       arrow.dx = 5;
-      bow.dy = 2;
+      bow.dy = 1;
       target.dy = 0;
       break;
     case 'medium':
@@ -221,9 +224,9 @@ function initGame(level) {
       target.dy = 10;
       break;
     case 'insanity':
-      arrow.dx = 15;
-      bow.dy = 6;
-      target.dy = 10;
+      arrow.dx = 100;
+      bow.dy = 60;
+      target.dy = 100;
       break;
     default:
       arrow.dx = 5;
