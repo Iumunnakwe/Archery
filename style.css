@@ -9,6 +9,10 @@ body, html {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    
+}
+h1{
+    color: black;
 }
 
 .container {
