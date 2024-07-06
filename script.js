@@ -210,7 +210,7 @@ function initGame(level) {
   switch(level) {
     case 'easy':
       arrow.dx = 5;
-      bow.dy = 1;
+      bow.dy = 2;
       target.dy = 0;
       break;
     case 'medium':
@@ -224,9 +224,9 @@ function initGame(level) {
       target.dy = 10;
       break;
     case 'insanity':
-      arrow.dx = 100;
-      bow.dy = 60;
-      target.dy = 100;
+      arrow.dx = 10;
+      bow.dy = 15;
+      target.dy = 15;
       break;
     default:
       arrow.dx = 5;
