@@ -52,3 +52,29 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        height: auto; /* Allow height to adjust for content */
+        padding: 20px; /* Add some padding */
+        width: 100vw;
+    }
+    canvas {
+        width: 114vw;
+        height: 100vh;
+    }
+
+    #scoreboard {
+        font-size: 16px; /* Smaller font size for scoreboard */
+        padding: 8px; /* Adjust padding */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
